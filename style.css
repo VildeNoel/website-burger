@@ -1,0 +1,325 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1%;
+}
+
+/* fonts */
+@font-face {
+  font-family: "planet_benson_2regular";
+  src:
+    url("./fonts/planetbe.woff2") format("woff2"),
+    url("./fonts/planetbe.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.climate-crisis,
+h1 {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YEAR" 1979;
+  color: blueviolet;
+  background-color: bisque;
+  margin-block: 2rem 1rem;
+  font-size: 40px;
+}
+.share-tech-regular,
+h2 {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: blueviolet;
+
+  padding: 1%;
+  margin: 0%;
+}
+
+p {
+  color: rgb(183, 128, 235);
+  background-color: bisque;
+  margin-block: 0.3rem 2rem;
+  padding-inline: 0.5rem;
+  font-size: 1.2rem;
+}
+
+header {
+  padding: 0%;
+  margin: 0%;
+  color: blueviolet;
+  font-size: 25px;
+}
+
+body {
+  background-color: bisque;
+  padding: 1%;
+}
+
+h3 {
+  color: blueviolet;
+  padding: 0.3rem;
+  margin-block: 1rem 0rem;
+}
+
+ul {
+  color: rgb(183, 128, 235);
+  margin-left: 1rem;
+  margin-block: -2rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  color: blueviolet;
+  margin-block: 5rem;
+}
+
+dd {
+  color: rgb(183, 128, 235);
+  margin: 0 0 3rem 1%;
+  margin-left: 2%;
+  margin-left: 1rem;
+}
+
+dt {
+  color: blueviolet;
+  margin: 2rem 0 0;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+image {
+  padding: 1%;
+}
+
+/******************** knappen ***********/
+.a2 {
+  border: 1px solid;
+  padding-block: 0.6rem;
+  padding-inline: 3.5rem 3.5rem;
+  color: blueviolet;
+  background-color: rgb(215, 174, 243);
+  font-family: "planet_benson_2regular", sans-serif;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.a2:hover {
+  color: white;
+}
+/*******************************/
+.main {
+  padding: 1%;
+}
+.lavet_af_vilde {
+  padding: 35px;
+  background-color: rgb(215, 174, 243);
+  color: black;
+  font-size: 1.4rem;
+}
+
+#udseende {
+  margin-top: 2.2rem;
+}
+/******************************************** Menu ***********************************************/
+/* 
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(215, 174, 243);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (width < 700px) {
+    display: none;
+  }
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+
+  display: flex;
+  align-items: center;
+
+  @media (width < 800px) {
+    &.active .menu {
+      display: block;
+      background-color: #ffffff;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.active .menu li {
+      margin: 10px 20px;
+    }
+
+    &.active .menu a {
+      font-size: 24px;
+    }
+  }
+} */
+
+/*burgermenu*/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(215, 174, 243);
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  @media (width < 800px) {
+    &.active .menu {
+      display: block;
+      background-color: #ffffff;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.active .menu li {
+      margin: 10px 20px;
+    }
+
+    &.active .menu a {
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    :hover {
+      color: #ff0000;
+    }
+  }
+  @media (width < 800px) {
+    display: none;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  @media (width < 800px) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+
+    &.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    &.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    &.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+  }
+}
